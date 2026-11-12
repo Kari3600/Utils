@@ -32,4 +32,9 @@ public class IntVector2 implements Vector2<Integer> {
     public int hashCode() {
         return Objects.hash(x, y);
     }
+
+    @Override
+    public String toString() {
+        return "IntVector2[" + x + ", " + y + "]";
+    }
 }

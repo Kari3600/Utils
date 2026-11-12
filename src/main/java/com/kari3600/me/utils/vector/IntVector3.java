@@ -39,4 +39,9 @@ public class IntVector3 implements Vector3<Integer> {
     public int hashCode() {
         return Objects.hash(x, y, z);
     }
+
+    @Override
+    public String toString() {
+        return "IntVector3[" + x + ", " + y + ", " + z + "]";
+    }
 }

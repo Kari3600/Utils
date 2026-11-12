@@ -24,12 +24,17 @@ public class PairImpl<A,B> implements Pair<A,B> {
     }
 
     @Override
-    public A left() {
+    public A getLeft() {
         return left;
     }
 
     @Override
-    public B right() {
+    public B getRight() {
         return right;
+    }
+
+    @Override
+    public String toString() {
+        return "(" + getLeft() + ", " + getRight() + ")";
     }
 }
